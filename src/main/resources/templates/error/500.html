@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Error 500</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="#" th:href="@{/css/style.css}" rel="stylesheet" />
+	<meta http-equiv="refresh" content="7; url=/" />
+</head>
+<body>
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<img src="../static/imgs/500.png" th:src="@{/imgs/500.png}" />
+			<p>Serás redirigido al inicio en breves momentos. Disculpe las molestias.</p>
+		</div>
+		<br/>
+		<br/>
+		<div class="container">
+			<a class="btn btn-lg btn-primary btn-block" type="submit" th:href="@{/}">Click aquí si no eres redirigido automáticamente</a>
+		</div>
+	</div>
+
+</body>
+</html>
