@@ -1,0 +1,457 @@
+2022-06-27 19:04:38 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE `categoria` (\000d\000a  `id` bigint[*](20) NOT NULL,\000d\000a  `destacada` bit(1) NOT NULL,\000d\000a  `imagen` varchar(512) DEFAULT NULL,\000d\000a  `nombre` varchar(512) NOT NULL\000d\000a) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE `categoria` (\000d\000a  `id` bigint[*](20) NOT NULL,\000d\000a  `destacada` bit(1) NOT NULL,\000d\000a  `imagen` varchar(512) DEFAULT NULL,\000d\000a  `nombre` varchar(512) NOT NULL\000d\000a) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE `categoria` (
+  `id` bigint(20) NOT NULL,
+  `destacada` bit(1) NOT NULL,
+  `imagen` varchar(512) DEFAULT NULL,
+  `nombre` varchar(512) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 [42001-214]
+2022-06-27 19:04:38 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORIA" not found (this database is empty); SQL statement:
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`id`, `destacada`, `imagen`, `nombre`) VALUES
+(1, b'0', 'https://iconape.com/wp-content/png_logo_vector/laptop.png', 'Portátiles'),
+(2, b'0', 'https://cdn-icons-png.flaticon.com/512/962/962028.png', 'Componentes'),
+(3, b'0', 'https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computadora-de-escritorio-icono-computadora.png', 'Sobremesas'),
+(4, b'0', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/1200px-Smartphone_icon_-_Noun_Project_283536.svg.png', 'Smartphones'),
+(17, b'0', 'https://icon-library.com/images/icon-printer/icon-printer-6.jpg', 'Impresoras') [42104-214]
+2022-06-27 19:05:27 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE categoria(\000d\000a  id bigint[*](20) NOT NULL,\000d\000a  destacada bit(1) NOT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE categoria(\000d\000a  id bigint[*](20) NOT NULL,\000d\000a  destacada bit(1) NOT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE categoria(
+  id bigint(20) NOT NULL,
+  destacada bit(1) NOT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL
+) [42001-214]
+2022-06-27 19:06:03 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE categoria(id bigint[*](20) NOT NULL,destacada bit(1) NOT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE categoria(id bigint[*](20) NOT NULL,destacada bit(1) NOT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE categoria(id bigint(20) NOT NULL,destacada bit(1) NOT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL) [42001-214]
+2022-06-27 19:06:53 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE categoria(id bigint [*]prymary key,destacada bit(1) NOT NULL, imagen varchar(512) DEFAULT NULL, nombre varchar(512) NOT NULL)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE categoria(id bigint [*]prymary key,destacada bit(1) NOT NULL, imagen varchar(512) DEFAULT NULL, nombre varchar(512) NOT NULL)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE categoria(id bigint prymary key,destacada bit(1) NOT NULL, imagen varchar(512) DEFAULT NULL, nombre varchar(512) NOT NULL) [42001-214]
+2022-06-27 19:09:08 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DESTACADA" no encontrada
+Column "DESTACADA" not found; SQL statement:
+INSERT INTO categoria (id, destacada, imagen, nombre) VALUES
+(1, b'0', 'https://iconape.com/wp-content/png_logo_vector/laptop.png', 'Portátiles'),
+(2, b'0', 'https://cdn-icons-png.flaticon.com/512/962/962028.png', 'Componentes'),
+(3, b'0', 'https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computadora-de-escritorio-icono-computadora.png', 'Sobremesas'),
+(4, b'0', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/1200px-Smartphone_icon_-_Noun_Project_283536.svg.png', 'Smartphones'),
+(17, b'0', 'https://icon-library.com/images/icon-printer/icon-printer-6.jpg', 'Impresoras') [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-27 19:11:21 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE producto (\000d\000a  id bigint[*](20) NOT NULL,\000d\000a  descripcion varchar(512) NOT NULL,\000d\000a  descuento float DEFAULT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL,\000d\000a  pvp float NOT NULL,\000d\000a  id_categoria bigint(20) DEFAULT NULL\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE producto (\000d\000a  id bigint[*](20) NOT NULL,\000d\000a  descripcion varchar(512) NOT NULL,\000d\000a  descuento float DEFAULT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL,\000d\000a  pvp float NOT NULL,\000d\000a  id_categoria bigint(20) DEFAULT NULL\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE producto (
+  id bigint(20) NOT NULL,
+  descripcion varchar(512) NOT NULL,
+  descuento float DEFAULT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL,
+  pvp float NOT NULL,
+  id_categoria bigint(20) DEFAULT NULL
+) [42001-214]
+2022-06-27 19:11:59 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE producto (id bigint[*](20) primary key,descripcion varchar(512) NOT NULL,descuento float DEFAULT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL,pvp float NOT NULL,id_categoria bigint(20) DEFAULT NULL\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE producto (id bigint[*](20) primary key,descripcion varchar(512) NOT NULL,descuento float DEFAULT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL,pvp float NOT NULL,id_categoria bigint(20) DEFAULT NULL\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE producto (id bigint(20) primary key,descripcion varchar(512) NOT NULL,descuento float DEFAULT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL,pvp float NOT NULL,id_categoria bigint(20) DEFAULT NULL
+) [42001-214]
+2022-06-27 19:12:06 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE producto (id bigint[*](20) primary key,descripcion varchar(512) NOT NULL,descuento float DEFAULT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL,pvp float NOT NULL,id_categoria bigint(20) DEFAULT NULL)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE producto (id bigint[*](20) primary key,descripcion varchar(512) NOT NULL,descuento float DEFAULT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL,pvp float NOT NULL,id_categoria bigint(20) DEFAULT NULL)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE producto (id bigint(20) primary key,descripcion varchar(512) NOT NULL,descuento float DEFAULT NULL,imagen varchar(512) DEFAULT NULL,nombre varchar(512) NOT NULL,pvp float NOT NULL,id_categoria bigint(20) DEFAULT NULL) [42001-214]
+2022-06-27 19:12:54 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE puntuacion (\000d\000a  id bigint primary key,\000d\000a  fecha date DEFAULT NULL,\000d\000a  puntuacion int[*](11) NOT NULL,\000d\000a  id_producto bigint(20) DEFAULT NULL,\000d\000a  constraint chk_punt check (puntuacion >= 1 and puntuacion <=5)\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE puntuacion (\000d\000a  id bigint primary key,\000d\000a  fecha date DEFAULT NULL,\000d\000a  puntuacion int[*](11) NOT NULL,\000d\000a  id_producto bigint(20) DEFAULT NULL,\000d\000a  constraint chk_punt check (puntuacion >= 1 and puntuacion <=5)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE puntuacion (
+  id bigint primary key,
+  fecha date DEFAULT NULL,
+  puntuacion int(11) NOT NULL,
+  id_producto bigint(20) DEFAULT NULL,
+  constraint chk_punt check (puntuacion >= 1 and puntuacion <=5)
+) [42001-214]
+2022-06-27 19:15:08 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "ALTER TABLE categoria [*]MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "ALTER TABLE categoria [*]MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE categoria MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18 [42001-214]
+2022-06-27 19:15:08 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "ALTER TABLE producto  [*]MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "ALTER TABLE producto  [*]MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE producto  MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25 [42001-214]
+2022-06-27 19:15:34 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "ALTER TABLE categoria [*]MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "ALTER TABLE categoria [*]MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE categoria MODIFY id bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18 [42001-214]
+2022-06-27 19:16:01 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "ALTER TABLE categoria [*]MODIFY id bigint primary key AUTO_INCREMENT"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "ALTER TABLE categoria [*]MODIFY id bigint primary key AUTO_INCREMENT"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE categoria MODIFY id bigint primary key AUTO_INCREMENT [42001-214]
+2022-06-27 19:27:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "PRODUCTO" debido a que "FK_PUNT" depende de él.
+Cannot drop "PRODUCTO" because "FK_PUNT" depends on it; SQL statement:
+drop table producto [90107-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:97)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:121)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-27 19:28:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE categoria (\000d\000a  id bigint [*]primary_key AUTO_INCREMENT,\000d\000a  destacada bit(1) NOT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE categoria (\000d\000a  id bigint [*]primary_key AUTO_INCREMENT,\000d\000a  destacada bit(1) NOT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE categoria (
+  id bigint primary_key AUTO_INCREMENT,
+  destacada bit(1) NOT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL
+) [42001-214]
+2022-06-27 19:30:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE categoria (\000d\000a  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\000d\000a  destacada bit[*](1) NOT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE categoria (\000d\000a  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\000d\000a  destacada bit[*](1) NOT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE categoria (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  destacada bit(1) NOT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL
+) [42001-214]
+2022-06-27 19:31:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO categoria (destacada, imagen, nombre) VALUES\000d\000a(false [*]'https://iconape.com/wp-content/png_logo_vector/laptop.png', 'Portátiles'),\000d\000a(false, 'https://cdn-icons-png.flaticon.com/512/962/962028.png', 'Componentes'),\000d\000a(false, 'https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computadora-de-escritorio-icono-computadora.png', 'Sobremesas'),\000d\000a(false, 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/1200px-Smartphone_icon_-_Noun_Project_283536.svg.png', 'Smartphones'),\000d\000a(false, 'https://icon-library.com/images/icon-printer/icon-printer-6.jpg', 'Impresoras')"; se esperaba "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO categoria (destacada, imagen, nombre) VALUES\000d\000a(false [*]'https://iconape.com/wp-content/png_logo_vector/laptop.png', 'Portátiles'),\000d\000a(false, 'https://cdn-icons-png.flaticon.com/512/962/962028.png', 'Componentes'),\000d\000a(false, 'https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computadora-de-escritorio-icono-computadora.png', 'Sobremesas'),\000d\000a(false, 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/1200px-Smartphone_icon_-_Noun_Project_283536.svg.png', 'Smartphones'),\000d\000a(false, 'https://icon-library.com/images/icon-printer/icon-printer-6.jpg', 'Impresoras')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO categoria (destacada, imagen, nombre) VALUES
+(false 'https://iconape.com/wp-content/png_logo_vector/laptop.png', 'Portátiles'),
+(false, 'https://cdn-icons-png.flaticon.com/512/962/962028.png', 'Componentes'),
+(false, 'https://images.vexels.com/media/users/3/157318/isolated/lists/2782b0b66efa5815b12c9c637322aff3-computadora-de-escritorio-icono-computadora.png', 'Sobremesas'),
+(false, 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Smartphone_icon_-_Noun_Project_283536.svg/1200px-Smartphone_icon_-_Noun_Project_283536.svg.png', 'Smartphones'),
+(false, 'https://icon-library.com/images/icon-printer/icon-printer-6.jpg', 'Impresoras') [42001-214]
+2022-06-27 19:34:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PUNTUACION" ya existe
+Table "PUNTUACION" already exists; SQL statement:
+CREATE TABLE puntuacion (
+  ID BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  fecha date DEFAULT NULL,
+  puntuacion int NOT NULL,
+  id_producto bigint DEFAULT NULL,
+  constraint chk_punt check (puntuacion >= 1 and puntuacion <=5)
+) [42101-214]
+2022-06-27 19:37:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE"; expected "INSERT"; SQL statement:
+INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE [42001-214]
+2022-06-27 19:37:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]INFORMATION_SCHEMA.CHECK_CONSTRAINTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]INFORMATION_SCHEMA.CHECK_CONSTRAINTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE"; expected "INSERT"; SQL statement:
+INFORMATION_SCHEMA.CHECK_CONSTRAINTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE [42001-214]
+2022-06-27 19:37:46 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]INFORMATION_SCHEMA.CHECK_CONSTRAINTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS"; se esperaba "INSERT"
+Syntax error in SQL statement "[*]INFORMATION_SCHEMA.CHECK_CONSTRAINTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS"; expected "INSERT"; SQL statement:
+INFORMATION_SCHEMA.CHECK_CONSTRAINTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS [42001-214]
+2022-06-27 19:40:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table [*]*"; se esperaba "identifier"
+Syntax error in SQL statement "drop table [*]*"; expected "identifier"; SQL statement:
+drop table * [42001-214]
+2022-06-27 19:43:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE producto (\000d\000a  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\000d\000a  descripcion varchar(512) NOT NULL,\000d\000a  descuento float DEFAULT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL,\000d\000a  pvp float NOT NULL,\000d\000a  id_categoria bigint[*](20) DEFAULT NULL,\000d\000aADD CONSTRAINT FK_PROD FOREIGN KEY (id_categoria) REFERENCES categoria (id)\000d\000a)"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE producto (\000d\000a  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\000d\000a  descripcion varchar(512) NOT NULL,\000d\000a  descuento float DEFAULT NULL,\000d\000a  imagen varchar(512) DEFAULT NULL,\000d\000a  nombre varchar(512) NOT NULL,\000d\000a  pvp float NOT NULL,\000d\000a  id_categoria bigint[*](20) DEFAULT NULL,\000d\000aADD CONSTRAINT FK_PROD FOREIGN KEY (id_categoria) REFERENCES categoria (id)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE producto (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  descripcion varchar(512) NOT NULL,
+  descuento float DEFAULT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL,
+  pvp float NOT NULL,
+  id_categoria bigint(20) DEFAULT NULL,
+ADD CONSTRAINT FK_PROD FOREIGN KEY (id_categoria) REFERENCES categoria (id)
+) [42001-214]
+2022-06-27 19:43:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "CONSTRAINT"
+Unknown data type: "CONSTRAINT"; SQL statement:
+CREATE TABLE producto (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  descripcion varchar(512) NOT NULL,
+  descuento float DEFAULT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL,
+  pvp float NOT NULL,
+  id_categoria bigint DEFAULT NULL,
+ADD CONSTRAINT FK_PROD FOREIGN KEY (id_categoria) REFERENCES categoria (id)
+) [50004-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:6249)
+	at org.h2.command.Parser.readIfDataType(Parser.java:6087)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:6069)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5948)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:9331)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9271)
+	at org.h2.command.Parser.parseCreate(Parser.java:6784)
+	at org.h2.command.Parser.parsePrepared(Parser.java:763)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-27 19:44:37 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO producto (id, descripcion, descuento, imagen, nombre, pvp, id_categoria) VALUES
+( 'Adaptado a cualquier presupuesto. Preparado para la empresa. Conéctate con el PC portátil HP 255 de precio económico que incluye la tecnología más reciente y un chasis duradero que ayuda a proteger el equipo. Completa tareas empresariales gracias a un procesador AMD Ryzen y a las herramientas de colaboración básicas.', 0.09, 'https://thumb.pccomponentes.com/w-530-530/articles/35/350514/1752-hp-255-g8-amd-3020e-8gb-256gb-ssd-156.jpg', 'HP 255 G8 AMD 3020E/8GB/256GB SSD/15.6\"', 399, 1),
+('¿Buscas un portátil de gama básica lo suficientemente potente para que te ayude a sacar el trabajo adelante? Echa un vistazo al IdeaPad 3 de 39,62 cm (15,6\"). Con hasta los últimos procesadores Intel® Core™ de 10.ª generación aumentan el rendimiento, te permiten realizar fácilmente varias tareas a la vez y te ofrecen una extraordinaria experiencia de entretenimiento. Los detalles de diseño bien meditados, como el obturador de seguridad físico de la cámara web, completan el producto.', 0.05, 'https://thumb.pccomponentes.com/w-530-530/articles/45/451889/162-lenovo-ideapad-3-15igl05-intel-celeron-n4020-8gb-256-gb-ssd-156.jpg', 'Lenovo IdeaPad 3 15IGL05 Intel Celeron N4020/8GB/256 GB SSD/15.6\"', 378.98, 1),
+('La serie MPG saca lo mejor de los jugadores al permitir una expresión completa en color con control avanzado de iluminación RGB y sincronización. Experimente en otro nivel de personalización con una tira de LED frontal que proporciona notificaciones convenientes en el juego y en tiempo real. Con la serie MPG, transforme su equipo en el centro de atención y las mejores tablas de clasificación con estilo.', 0.14, 'https://thumb.pccomponentes.com/w-530-530/articles/30/302203/1879-msi-mpg-b550-gaming-plus.jpg', 'MSI MPG B550 GAMING PLUS ', 134.98, 2),
+('Los nuevos procesadores Intel® Core™ de 10? generación ofrecen mejoras de rendimiento notables para conseguir una productividad mejorada y un entretenimiento impresionante, incluyendo hasta 5,3 GHz, Intel® Wi-Fi 6 (Gig+), tecnología Thunderbolt™ 3, HDR 4K, optimización de sistema inteligente y mucho más.', 0, 'https://thumb.pccomponentes.com/w-530-530/articles/28/287898/intel-core-i5-10400f-290-ghz.jpg', 'Intel Core i5-10400F 2.90 GHz', 140.86, 2),
+('Las tarjetas gráficas AMD Radeon RX 6600 cuentan con tecnologías de diseño e ingeniería líderes en su clase para ofrecer las velocidades de cuadro ultra altas que exigen las pantallas de alta frecuencia de actualización más recientes. Las nuevas y potentes unidades de cómputo, AMD Infinity Cache y 8 GB de memoria GDDR6 dedicada permiten experiencias de juego de alta calidad y un abundante rendimiento de creación de contenido para lograr el equilibrio perfecto entre trabajo y juego. Sumérjase en los juegos d', 0.16, 'https://thumb.pccomponentes.com/w-530-530/articles/57/577579/1448-sapphire-pulse-amd-radeon-rx-6600-8gb-gddr6-b8854bbd-4604-4ce1-95c9-0ec578da6312.jpg', 'Sapphire PULSE AMD Radeon RX 6600 8GB GDDR6', 499.9, 2),
+('La serie MAG nació a través de rigurosas pruebas de calidad y se diseñó para ser un símbolo de robustez y durabilidad. Centrada en brindar la mejor experiencia de usuario, la serie MAG tiene un proceso de instalación simple junto con una interfaz de usuario amigable que la convierte en la mejor opción para los jugadores de nivel de entrada.', 0, 'https://thumb.pccomponentes.com/w-530-530/articles/41/414775/1692-msi-mag-codex-5-11tc-460eu-intel-core-i5-11400f-16gb-512gb-ssd-rtx-3060.jpg', 'MSI MAG Codex 5 11TG-814EU Intel Core i5-11400F/16GB/512GB SSD/RTX 3060 Ti', 1548.99, 3),
+('Una vez más PcComponentes sorprende a la industria de la informática con el lanzamiento de los nuevos PcCom, la nueva línea de Pcs de sobremesa con componentes específicos para juegos, creada tras un amplio trabajo de investigación para ofrecer el mayor rendimiento y optimización en el juego para nuestros clientes.', 0, 'https://thumb.pccomponentes.com/w-530-530/articles/59/591192/1216-pccom-gold-amd-ryzen-5-5600x-16gb-1tb-500gb-ssd-rtx3060-windows-11-pro-comprar.jpg', 'PcCom Gold AMD Ryzen 5 5600X/16GB/1TB+500GB SSD/RTX3060 + Windows 11 Pro', 1687.89, 3),
+('El Galaxy M22 llega con grandes mejoras en sus características técnicas y con todo lo que necesitas para disfrutar y trabajar durante todo el día. Descubre su pantalla de 6.4 pulgadas y 90Hz, sus múltiples cámaras de alta resolución de hasta 48MP y su diseño atractivo en 3 colores.', 0.27, 'https://thumb.pccomponentes.com/w-530-530/articles/61/616201/1273-samsung-galaxy-m22-4-128gb-negro-libre.jpg', 'Samsung Galaxy M22 4/128GB Negro Libre', 189, 4),
+('Xiaomi 11 Lite 5G NE: Mi estilo, mi norma. Diseño ligero, elegante y liso, compatible con Dolby Vision® y pantalla AMOLED de 6,55\" y 90 Hz.', 0, 'https://img.pccomponentes.com/articles/58/585462/1340-xiaomi-11-lite-5g-ne-6-128gb-negro-libre.jpg', 'Xiaomi 11 Lite 5G NE 6/128GB Negro Libre', 351.36, 4),
+('POCO M4 Pro 5G: A tope de diversión. Pantalla DotDisplay DCI-P3 de 90 Hz, procesador MediaTek Dimensity 810, cámara principal de 50 MP y cámara ultra gran angular de 8 MP, diseño clásico de POCO y motor lineal de eje X de gama alta.', 0.27, 'https://thumb.pccomponentes.com/w-530-530/articles/76/761735/1917-xiaomi-poco-m4-pro-5g-6-128gb-negro-libre.jpg', 'Xiaomi POCO M4 Pro 5G 6/128GB Negro Libre', 288, 4),
+('Esta impresora sin cartuchos ofrece una calidad absoluta e incluye hasta 3 años de tinta. Obtén conexiones más rápidas gracias al Wi-Fi de banda doble y a una impresión móvil sencilla con la aplicación HP Smart. Rellena fácilmente el depósito cuando el sensor de tinta te lo indique, botellas con sistema anti-derrame y cierre hermético.', 0, 'https://thumb.pccomponentes.com/w-530-530/articles/24/246223/a28.jpg', 'HP Smart Tank Wireless 455 Multifunción Color WiFi', 211.08, 17) [21002-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.dml.Insert.doPrepare(Insert.java:295)
+	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-27 19:46:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODUCTO" ya existe
+Table "PRODUCTO" already exists; SQL statement:
+CREATE TABLE producto (
+ id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  descripcion varchar(512) NOT NULL,
+  descuento float DEFAULT NULL,
+  imagen varchar(512) DEFAULT NULL,
+  nombre varchar(512) NOT NULL,
+  pvp float NOT NULL,
+  id_categoria bigint DEFAULT NULL
+) [42101-214]
+2022-06-27 19:52:06 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODUCTCATEGORIA" no encontrada
+Table "PRODUCTCATEGORIA" not found; SQL statement:
+select * from productCATEGORIA [42102-214]
+2022-06-27 19:52:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "TCATEGORIA" no encontrada
+Table "TCATEGORIA" not found; SQL statement:
+select * from tCATEGORIA [42102-214]
+2022-06-27 19:54:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "([*]'2022-01-23', 3, 19),\000d\000a('2022-01-23', 5, 13),\000d\000a('2022-01-23', 2, 12),\000d\000a('2022-01-24', 4, 12),\000d\000a('2022-01-23', 5, 21),\000d\000a('2022-01-23', 3, 21)"; se esperaba "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]'2022-01-23', 3, 19),\000d\000a('2022-01-23', 5, 13),\000d\000a('2022-01-23', 2, 12),\000d\000a('2022-01-24', 4, 12),\000d\000a('2022-01-23', 5, 21),\000d\000a('2022-01-23', 3, 21)"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+('2022-01-23', 3, 19),
+('2022-01-23', 5, 13),
+('2022-01-23', 2, 12),
+('2022-01-24', 4, 12),
+('2022-01-23', 5, 21),
+('2022-01-23', 3, 21) [42001-214]
